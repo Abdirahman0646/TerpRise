@@ -1,0 +1,6 @@
+{
+  "name": "TerpRise - Professional Interpreter Education",
+  "description": "Practical learning and professional development opportunities for medical and healthcare interpreters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

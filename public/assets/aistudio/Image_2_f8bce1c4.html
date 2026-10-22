@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>TerpRise | Professional Interpreter Education</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#00696d","inverse-surface":"#2d3133","on-secondary-fixed":"#002021","on-tertiary":"#ffffff","secondary-container":"#7ff1f7","error-container":"#ffdad6","primary-container":"#103254","on-primary":"#ffffff","primary":"#001d38","on-tertiary-container":"#899bad","secondary-fixed-dim":"#63d7dd","surface-container-low":"#f1f4f6","tertiary-fixed-dim":"#b6c9db","surface-container":"#ebeef0","surface-container-high":"#e5e9eb","on-tertiary-fixed-variant":"#374958","outline":"#73777f","on-background":"#181c1e","surface-dim":"#d7dadc","on-error-container":"#93000a","surface-container-highest":"#e0e3e5","on-primary-fixed":"#001c37","surface-container-lowest":"#ffffff","background":"#f7fafc","tertiary-fixed":"#d2e5f8","tertiary":"#0b1e2b","on-secondary":"#ffffff","on-secondary-container":"#006e72","on-primary-container":"#7d9bc2","on-surface-variant":"#43474e","secondary-fixed":"#82f4fa","on-primary-fixed-variant":"#2a486b","primary-fixed-dim":"#abc9f2","on-tertiary-fixed":"#0a1d2b","inverse-on-surface":"#eef1f3","surface-tint":"#436085","surface-variant":"#e0e3e5","outline-variant":"#c3c6cf","error":"#ba1a1a","on-surface":"#181c1e","on-error":"#ffffff","inverse-primary":"#abc9f2","tertiary-container":"#213341","primary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#004f52","surface":"#f7fafc","surface-bright":"#f7fafc"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1.25rem","margin":"3rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"3rem","space-lg":"1.75rem","gutter":"1.5rem"},"fontFamily":{"label-lg":["Inter"],"headline-lg":["Manrope"],"headline-sm":["Manrope"],"headline-2xl":["Manrope"],"headline-xl-mobile":["Manrope"],"label-md":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-xl":["Manrope"],"headline-md":["Manrope"],"body-lg":["Inter"],"headline-2xl-mobile":["Manrope"],"body-md":["Inter"]},"fontSize":{"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.625rem","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-2xl":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.06em","fontWeight":"600"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["1.375rem",{"lineHeight":"1.875rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.875rem","fontWeight":"400"}],"headline-2xl-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["1rem",{"lineHeight":"1.625rem","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-3 shrink-0"><a class="flex items-center gap-3" data-path="home" href="#"><img alt="TerpRise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XwmmI_zWlFWhSco1eaHd0CvH1BhDIkOek2L_lpf77CQ4PM7XFS49iA8qkwV5OQ9mz86oVKyAfzIcOr_-lzZ9P6bup8yfDHBh9lJGhLFBp8xuDTj4fiBcJWomfttJnyRJXPpX-_ROXajIDl16jk5M8elzKICxg8nT4iu1GBef_hSaaqYvwmOKNqk-HsWQyqo18xM6VT7-L1smZ4zF7IIfWeU2TLclPr9BMoBIFrvNVo8OoLm9Hqv4e8MA"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TerpRise</span></a></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-primary font-bold border-b-2 border-secondary"><a aria-current="page" class="transition-colors py-1 text-primary font-bold border-b-2 border-secondary" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="programs" href="#">Programs</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="insights-blog" href="#">Insights / Blog</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4 shrink-0"><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Next Cohort: Fall 2025</span></div><button aria-label="Search catalog" class="p-2 text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="hidden sm:inline-flex items-center justify-center bg-secondary text-on-secondary px-5 py-2.5 rounded font-label-lg text-label-lg hover:bg-on-secondary-container transition-colors" data-path="contact" href="#">Get in Touch</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Section 1: Split Hero Section -->
+<section class="w-full bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: 7 cols -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Interpreter Education Reimagined</span>
+</div>
+<h1 class="font-headline-2xl text-headline-2xl text-primary tracking-tight leading-tight">
+            Building Skills. <br/>
+<span class="text-secondary">Elevating Interpreters.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Practical learning and professional development opportunities for interpreters seeking to strengthen their skills, build confidence, and grow their careers.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary px-7 py-3.5 rounded font-label-lg text-label-lg hover:bg-on-secondary-container transition-all shadow-sm" data-path="programs" href="#">
+              Explore Our Programs
+            </a>
+<a class="inline-flex items-center justify-center bg-surface-container text-primary px-7 py-3.5 rounded font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" data-path="about-us" href="#">
+              Our Mission
+            </a>
+</div>
+<div class="pt-6 mt-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Focused on accessible medical interpreter training and practical clinical competency.
+            </p>
+</div>
+</div>
+<!-- Right Column: 5 cols -->
+<div class="lg:col-span-5 flex flex-col gap-3">
+<div class="relative overflow-hidden rounded-xl bg-surface-container shadow-md group">
+<img class="w-full h-[460px] object-cover object-center group-hover:scale-[1.02] transition-transform duration-500" data-alt="A male professional medical interpreter wearing an identification badge holding a notepad, attentively facilitating dialogue between a female doctor in a white lab coat with stethoscope and a female patient sitting in a clinical exam room setting, bright natural daylight, calm atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWJzXQv7veyFSAsb1RomcP6TW3wqvv7ESeefUFwQf7SxA0tTz6ZOkAr2opXN8npYGU9PzuptjDGewf0jXPi6-GnTbivnq7naKlu_UufVcsqUom3w5Hb24v4koap4B8VDkmZsiRpW1bDvdCL3aaCwaDdgU7Mksb78bhlR1pC6LZ5gGrtCPB7CWOPHZyHH2CaSyWSUcHHPnLX3xd_yVOchHVHEH11p35keAgL2Yx7tpIo1v3h1KG6vA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-on-primary">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider block mb-1">Clinical Context Practice</span>
+<p class="font-headline-sm text-headline-sm leading-snug">Facilitating accurate, compassionate dialogue in healthcare settings.</p>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cohort Pilot 2025</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Curriculum Design</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Mission Introduction Section -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-14">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5 flex flex-col gap-3">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Our Foundation &amp; Purpose</span>
+<h2 class="font-headline-xl text-headline-xl text-primary leading-tight">
+            Making Interpreter Development More Accessible
+          </h2>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-5 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p>
+            TerpRise is being built to help interpreters access practical learning, professional development, and clearer pathways toward demonstrating their abilities. In multilingual patient encounters, language access saves lives—preventing catastrophic clinical misdiagnoses, fostering immediate patient rapport, and safeguarding consent.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant/90">
+            Yet excessive tuition barriers, inflexible schedules, and detached abstract theory continue to leave talented bilingual individuals without structured avenues for rigorous practical advancement. TerpRise dismantles these friction points with modular, applied training designed around the lived realities of practicing linguists.
+          </p>
+</div>
+</div>
+<!-- 4 Key Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col gap-3 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Skills-Centric Curriculum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Every session anchors directly into consecutive drills, clinical roleplays, and vocabulary synthesis rather than passive rote memory.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col gap-3 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Ethical Practice First</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Rooted in national standards: absolute impartiality, nuanced cultural brokering, and uncompromised patient confidentiality.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col gap-3 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Transparent Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Honest assessments, candid feedback loops, and crystal-clear milestones with no inflated certifications or hidden costs.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col gap-3 hover:translate-y-[-2px] transition-transform">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[24px]">diversity_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Affordable Accessibility</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Flexible, self-paced modules and accessible cohort schedules designed specifically around working healthcare linguists.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Our Focus Areas -->
+<section class="w-full bg-surface-container-lowest py-24">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-3 max-w-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Targeted Curriculum Pathways</span>
+<h2 class="font-headline-xl text-headline-xl text-primary">Core Focus Areas</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            TerpRise is designing practical, structured pathways in three key domains of interpreter education.
+          </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+          Active Academic Framework 2025
+        </div>
+</div>
+<!-- 3 Developmental Pathway Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Focus Area 1 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary px-3 py-1 rounded tracking-wider uppercase font-semibold">
+                Domain 01
+              </span>
+<span class="font-label-sm text-label-sm bg-secondary-container/60 text-on-secondary-container px-2.5 py-1 rounded uppercase tracking-wider font-semibold">
+                Curriculum In Development
+              </span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-primary">Medical Interpreter Training</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Build foundational knowledge in interpreting ethics, medical terminology, communication, and professional practice.
+              </p>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-5 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Key Modules Included:</span>
+<ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Core protocols &amp; triage modes</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Anatomy &amp; physiological systems vocabulary</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Role boundaries and boundary management</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Simulated encounter video analysis</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container font-semibold transition-colors" data-path="programs" href="#">
+<span>View Curriculum Syllabus</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Focus Area 2 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary px-3 py-1 rounded tracking-wider uppercase font-semibold">
+                Domain 02
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-primary px-2.5 py-1 rounded uppercase tracking-wider font-semibold">
+                Framework In Planning
+              </span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-primary">Language Proficiency Assessment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Explore structured approaches to demonstrating language proficiency and documenting assessment outcomes.
+              </p>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-5 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Key Modules Included:</span>
+<ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Documented evaluation rubrics</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Bilingual diagnostic benchmarks</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Consecutive memory span assessment</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Objective diagnostic feedback profiles</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container font-semibold transition-colors" data-path="contact" href="#">
+<span>Inquire on Pilot Criteria</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Focus Area 3 -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary px-3 py-1 rounded tracking-wider uppercase font-semibold">
+                Domain 03
+              </span>
+<span class="font-label-sm text-label-sm bg-secondary-container/60 text-on-secondary-container px-2.5 py-1 rounded uppercase tracking-wider font-semibold">
+                Community Workshops Planned
+              </span>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-md text-headline-md text-primary">Continuing Professional Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Support ongoing learning and the development of stronger interpreting skills across career stages.
+              </p>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-5 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Key Modules Included:</span>
+<ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Specialized pediatric &amp; oncology clinics</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Weekly live skills booster workshops</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dialectal nuance &amp; colloquialism salons</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Vicarious trauma &amp; wellness resilience</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container font-semibold transition-colors" data-path="register-interest" href="#">
+<span>Register Interest in Workshops</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Why TerpRise (Editorial 2-Column Layout) -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="bg-surface-container-low rounded-2xl p-8 lg:p-14 shadow-sm">
+<div class="max-w-3xl mb-12">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-2">Institutional Philosophy</span>
+<h2 class="font-headline-xl text-headline-xl text-primary">Why TerpRise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            A commitment to grounded competency, realistic learning curves, and structural clarity.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<!-- Item 1 -->
+<div class="flex gap-5">
+<div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Accessible Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Removing excessive cost and scheduling barriers so working bilingual individuals can access quality training without sacrificing their livelihood.
+              </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-5">
+<div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[26px]">record_voice_over</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Practical, Skills-Focused Education</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Moving beyond passive rote memorization into real-time roleplays, consecutive interpreting drills, and complex ethical dilemma analysis.
+              </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex gap-5">
+<div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[26px]">trending_up</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Professional Growth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Structured support that scales from foundational medical vocabulary all the way through specialized oncology, neurology, and surgical encounters.
+              </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex gap-5">
+<div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Commitment to Quality &amp; Transparency</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Clear educational objectives and realistic expectations without inflated credential promises or speculative claims.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Latest Insights / Blog Previews -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Knowledge Base &amp; Field Guides</span>
+<h2 class="font-headline-xl text-headline-xl text-primary">Insights for Interpreters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Practical perspectives, clinical ethics, and targeted study guides.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container transition-colors shrink-0" data-path="insights-blog" href="#">
+<span>View All Articles</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Blog Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold uppercase tracking-wider">Medical Interpreting</span>
+<span class="text-on-surface-variant">May 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors cursor-pointer leading-snug">
+              Understanding the Role of a Medical Interpreter
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              A detailed breakdown of the four primary roles—conduit, clarifier, cultural broker, and advocate—and when to navigate them safely in clinical environments.
+            </p>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary transition-colors" data-path="insights-blog" href="#">
+<span>Read Full Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold uppercase tracking-wider">Ethics &amp; Standards</span>
+<span class="text-on-surface-variant">April 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors cursor-pointer leading-snug">
+              Why Ethics Matter in Healthcare Interpreting
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Examining how impartiality, accuracy, and patient confidentiality uphold clinical safety, empower patient decision-making, and protect dignity.
+            </p>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary transition-colors" data-path="insights-blog" href="#">
+<span>Read Full Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold uppercase tracking-wider">Career Development</span>
+<span class="text-on-surface-variant">April 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors cursor-pointer leading-snug">
+              Building Confidence Through Deliberate Practice
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              How daily shadow-reading, specialized terminology glossaries, and recorded self-assessment elevate interpreting accuracy under stress.
+            </p>
+</div>
+<div class="px-8 pb-8 pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-semibold hover:text-secondary transition-colors" data-path="insights-blog" href="#">
+<span>Read Full Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 6: Closing Call to Action -->
+<section class="w-full bg-primary-container text-on-primary py-24">
+<div class="max-w-5xl mx-auto px-6 lg:px-12 text-center flex flex-col items-center gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-container rounded">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-wider">Next Step</span>
+</div>
+<h2 class="font-headline-2xl text-headline-2xl text-on-primary max-w-3xl tracking-tight leading-tight">
+        Your Growth as an Interpreter Starts Here.
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+        Join us as we work toward more accessible, practical professional development for interpreters. Be the first to know when courses and workshops open.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary px-8 py-3.5 rounded font-label-lg text-label-lg hover:bg-on-secondary-container transition-colors shadow-sm" data-path="contact" href="#">
+          Contact TerpRise
+        </a>
+<a class="inline-flex items-center justify-center bg-tertiary-container text-on-primary px-8 py-3.5 rounded font-label-lg text-label-lg hover:bg-tertiary transition-colors" data-path="register-interest" href="#">
+          Register Your Interest
+        </a>
+</div>
+<div class="pt-6">
+<p class="font-label-sm text-label-sm text-on-primary-container/80 tracking-wide">
+          Institutional notice: TerpRise is currently preparing initial cohort pilot materials. Course schedules will be announced to registered linguists first.
+        </p>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary pt-16 pb-12 border-t border-outline-variant"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-outline-variant/30"><div class="lg:col-span-4 flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="TerpRise Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1XwmmI_zWlFWhSco1eaHd0CvH1BhDIkOek2L_lpf77CQ4PM7XFS49iA8qkwV5OQ9mz86oVKyAfzIcOr_-lzZ9P6bup8yfDHBh9lJGhLFBp8xuDTj4fiBcJWomfttJnyRJXPpX-_ROXajIDl16jk5M8elzKICxg8nT4iu1GBef_hSaaqYvwmOKNqk-HsWQyqo18xM6VT7-L1smZ4zF7IIfWeU2TLclPr9BMoBIFrvNVo8OoLm9Hqv4e8MA"/><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight">TerpRise</span></div><p class="font-label-md text-label-md text-secondary-container uppercase tracking-wider">Building Skills. Elevating Interpreters.</p><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed pr-4">TerpRise is an interpreter education initiative dedicated to practical learning, professional development, and accessible pathways for medical and healthcare interpreters.</p></div><div class="lg:col-span-2 flex flex-col gap-3"><h3 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider pb-1">Navigation</h3><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container"><li class="hover:text-on-primary transition-colors"><a data-path="home" href="#">Home</a></li><li class="hover:text-on-primary transition-colors"><a data-path="about-us" href="#">About Us</a></li><li class="hover:text-on-primary transition-colors"><a data-path="programs" href="#">Programs</a></li><li class="hover:text-on-primary transition-colors"><a data-path="insights-blog" href="#">Insights / Blog</a></li><li class="hover:text-on-primary transition-colors"><a data-path="contact" href="#">Contact</a></li><li class="hover:text-on-primary transition-colors"><a data-path="register-interest" href="#">Register Interest</a></li></ul></div><div class="lg:col-span-3 flex flex-col gap-3"><h3 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider pb-1">Focus Areas</h3><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-primary-container"><li>Medical Interpreter Training</li><li>Language Proficiency Assessment</li><li>Continuing Professional Development</li><li>Ethics &amp; Standards</li></ul></div><div class="lg:col-span-3 flex flex-col gap-4"><h3 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider pb-1">Inquiries &amp; Transparency</h3><div class="p-3.5 bg-tertiary-container/60 border border-outline-variant/30 rounded flex flex-col gap-1.5"><span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Institutional Notice</span><p class="font-body-sm text-body-sm text-on-primary-container">Early-stage initiative. Course schedules and program enrollment dates will be announced.</p></div><div class="flex flex-col gap-2 pt-1"><a class="font-body-sm text-body-sm text-on-primary flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="mailto:hello@terprise.org"><span class="material-symbols-outlined text-[18px]">mail</span>hello@terprise.org</a><a class="font-body-sm text-body-sm text-on-primary flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="#" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">share</span>LinkedIn Network</a></div></div></div><div class="pt-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6"><div class="flex flex-col gap-1"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 TerpRise. All rights reserved.</p><p class="font-label-sm text-label-sm text-outline-variant">Independent educational development initiative. Not affiliated with governmental licensing agencies.</p></div><div class="flex flex-wrap items-center gap-6 font-label-md text-label-md text-on-primary-container"><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-primary transition-colors" data-path="ethics-commitment" href="#">Ethics Commitment</a></div></div></div></footer></body></html>
